@@ -21,7 +21,7 @@ body{
     position: relative;
     width: 66rem;
     height: 45rem;
-    background: red;
+    background: rgba(73, 171, 241, 0.68);
 }
 
 .cover {

@@ -21,7 +21,8 @@ body{
     position: relative;
     width: 66rem;
     height: 45rem;
-    background: rgba(73, 171, 241, 0.68);
+    background: var(--cover-color);
+    box-shadow: var(--box-shadow);
 }
 
 .cover {

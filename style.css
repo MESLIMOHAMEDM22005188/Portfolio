@@ -32,15 +32,13 @@ body{
     box-shadow: var(--box-shadow);
     border-top-left-radius: .6rem;
     border-bottom-left-radius: .6rem;
-    transform-origin: left;
-    transition: transform 0.3s ease; /* Ajout d'une transition pour une animation fluide */
+    transform-origin: left; /* Changement ici */
 }
 
 .cover.cover-left {
     z-index: -1;
 }
 
-.cover.cover-right {
-    z-index: 0; /* Déplacez-le au-dessus du cover-left */
-    transform: rotateY(180deg); /* Appliquez la rotation dès le début */
+.cover.cover-right.turn {
+    transform: rotateY(180deg);
 }

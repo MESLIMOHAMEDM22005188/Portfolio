@@ -25,6 +25,7 @@ body{
     box-shadow: var(--box-shadow);
 }
 
+
 .cover {
     position: absolute;
     width: 50%;

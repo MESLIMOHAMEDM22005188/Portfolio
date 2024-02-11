@@ -6,8 +6,9 @@
     --white-color: #fff;
     --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
     --border: .125rem solid #00abf0;
-    --box-shadow: 0 0 .6rem rgba(0, 0, 0, 2);
+    --box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.2);
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -21,6 +22,7 @@ body{
     width: 66rem;
     height: 45rem;
 }
+
 .cover {
     position: absolute;
     width: 50%;
@@ -31,6 +33,9 @@ body{
     border-bottom-left-radius: .6rem;
     transform-origin: right;
 }
-    .cover-cover-right.turn {
-        transform: rotateY(180deg);
-    }
+.cover.cover-left {
+    z-index: -1;
+}
+.cover.cover-right.turn {
+    transform: rotateY(180deg);
+}

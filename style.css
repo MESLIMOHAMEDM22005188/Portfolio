@@ -15,7 +15,8 @@ body{
     min-height: 100vh;
     background: var(--bg-color);
 }
-.wra pper{
+
+.wrapper{
     position: relative;
     width: 66rem;
     height: 45rem;

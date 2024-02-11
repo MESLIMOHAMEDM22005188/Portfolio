@@ -21,10 +21,8 @@ body{
     position: relative;
     width: 66rem;
     height: 45rem;
-    background: var(--cover-color);
-    box-shadow: var(--box-shadow);
+    background: red;
 }
-
 
 .cover {
     position: absolute;
@@ -34,13 +32,15 @@ body{
     box-shadow: var(--box-shadow);
     border-top-left-radius: .6rem;
     border-bottom-left-radius: .6rem;
-    transform-origin: left; /* Changement ici */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Ajout d'une transition pour une animation fluide */
 }
 
 .cover.cover-left {
     z-index: -1;
 }
 
-.cover.cover-right.turn {
-    transform: rotateY(180deg);
+.cover.cover-right {
+    z-index: 0; /* Déplacez-le au-dessus du cover-left */
+    transform: rotateY(180deg); /* Appliquez la rotation dès le début */
 }
